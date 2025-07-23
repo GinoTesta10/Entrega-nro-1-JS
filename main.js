@@ -10,12 +10,10 @@ function promedionotas() {
         suma += notatotal;
       } else {
         alert("Ingrese numeros entre 1-10");
-        return;
       }
     }
   } else {
     alert("Ingrese un numero valido.");
-    return;
   }
 
   const promedio = suma / notas;
