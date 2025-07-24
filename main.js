@@ -6,7 +6,7 @@ function promedionotas() {
   if (notas > 0) {
     for (let i = 1; i <= notas; i++) {
       let notatotal = parseInt(prompt("ingrese sus notas"));
-      if (notatotal > 0 && notatotal < 10) {
+      if (notatotal > 0 && notatotal <= 10) {
         suma += notatotal;
       } else {
         alert("Ingrese numeros entre 1-10");
@@ -17,7 +17,7 @@ function promedionotas() {
   }
 
   const promedio = suma / notas;
-  console.log(alumno + "tu promedio es " + promedio);
+  console.log(alumno + "tu promedio es de" + Math.round(promedio));
 }
 
 promedionotas();
